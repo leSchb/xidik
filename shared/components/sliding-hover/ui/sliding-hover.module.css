@@ -1,0 +1,16 @@
+.container {
+  --hover-transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+  position: absolute;
+  border-radius: var(--space-5);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+
+  transition:
+    background-color var(--hover-transition),
+    top var(--hover-transition),
+    left var(--hover-transition),
+    width var(--hover-transition),
+    opacity var(--hover-transition),
+    height var(--hover-transition);
+}

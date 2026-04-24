@@ -5,7 +5,7 @@ import { ElementType, RefObject } from "react";
 import { PolymorphicProps } from "@/shared/model";
 
 interface ContainerOwnProps<RefT extends HTMLElement> {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
   asChild?: boolean;
   bgColor?: string;

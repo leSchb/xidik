@@ -1,3 +1,19 @@
+.bg-orange-10 {
+  background-color: var(--orange-10);
+}
+
+.bg-orange-20 {
+  background-color: var(--orange-20);
+}
+
 .bg-orange-60 {
-    background-color: var(--orange-60-primary);
+  background-color: var(--orange-60-primary);
+}
+
+.bg-green-20 {
+  background-color: var(--green-20);
+}
+
+.bg-white {
+  background-color: var(--white);
 }

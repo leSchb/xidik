@@ -29,3 +29,41 @@
     background-color: var(--orange-100);
   }
 }
+
+.green-60 {
+  background-color: var(--green-60-primary);
+  color: var(--neutral-100);
+
+  @media screen and (any-hover: hover) {
+    &:hover {
+      background-color: var(--green-80);
+    }
+  }
+
+  &:active {
+    background-color: var(--green-100);
+  }
+}
+
+.black-border {
+  border: 2px solid var(--neutral-100);
+  span {
+    color: var(--neutral-100);
+  }
+
+  @media screen and (any-hover: hover) {
+    &:hover {
+      background-color: var(--neutral-100);
+      span {
+        color: var(--white);
+      }
+    }
+  }
+
+  &:active {
+    background-color: var(--neutral-80);
+    span {
+      color: var(--white);
+    }
+  }
+}

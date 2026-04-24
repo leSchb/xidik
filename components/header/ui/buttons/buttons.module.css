@@ -1,0 +1,17 @@
+.container {
+  gap: var(--space-10px);
+
+  @media screen and (width <= 1024px) {
+    display: none;
+  }
+}
+
+.button {
+  padding: var(--space-2) var(--space-6);
+  border-radius: var(--space-100px);
+
+  &:first-of-type {
+    padding-top: var(--space-6px);
+    padding-bottom: var(--space-6px);
+  }
+}

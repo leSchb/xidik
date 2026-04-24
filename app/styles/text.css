@@ -28,6 +28,10 @@
   color: var(--white);
 }
 
+.neutral-100 {
+  color: var(--neutral-100);
+}
+
 /* sizes */
 .headline {
   font-family: var(--font-days-one);
