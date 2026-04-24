@@ -1,0 +1,22 @@
+.button {
+  display: grid;
+  align-items: center;
+  transition: all var(--transition) !important;
+  user-select: none;
+
+  cursor: pointer !important;
+
+  &.activeScale:active {
+    transform: scale(0.95);
+  }
+
+  &.justifyCenter {
+    justify-content: center;
+  }
+
+  @media screen and (any-hover: hover) {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
