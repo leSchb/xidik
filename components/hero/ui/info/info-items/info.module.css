@@ -1,0 +1,25 @@
+.container {
+  flex-wrap: wrap;
+  
+  @media screen and (width <= 1024px) {
+    width: 351px;
+  }
+
+  @media screen and (width <= 560px) {
+    width: calc(100% - var(--space-6));
+  }
+}
+
+.item {
+  border-radius: var(--space-10);
+  padding: var(--space-10px) var(--space-5);
+  background-color: rgba(255, 255, 255, 0.2);
+
+  transition: background-color var(--transition);
+
+  @media screen and (any-hover: hover) {
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.33);
+    }
+  }
+}

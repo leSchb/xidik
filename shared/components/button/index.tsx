@@ -17,7 +17,7 @@ export default function Button<
   T extends ElementType,
   RefT extends HTMLElement,
 >({
-  activeScale = false,
+  activeScale = true,
   justifyCenter = true,
   children,
   bgColor = "transparent",
@@ -27,9 +27,10 @@ export default function Button<
 }: Props<T, RefT>) {
   return (
     <Container
-      bgColor={bgColor}
+      bgColor={null}
       className={classNames(
         classes.button,
+        classes[bgColor],
         activeScale && classes.activeScale,
         justifyCenter && classes.justifyCenter,
         className,

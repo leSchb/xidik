@@ -7,16 +7,25 @@
   cursor: pointer !important;
 
   &.activeScale:active {
-    transform: scale(0.95);
+    scale: 0.95;
   }
 
   &.justifyCenter {
     justify-content: center;
   }
+}
+
+.orange-60 {
+  background-color: var(--orange-60-primary);
+  color: var(--white);
 
   @media screen and (any-hover: hover) {
     &:hover {
-      opacity: 0.8;
+      background-color: var(--orange-80);
     }
+  }
+
+  &:active {
+    background-color: var(--orange-100);
   }
 }

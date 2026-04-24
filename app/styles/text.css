@@ -6,6 +6,10 @@
   white-space: nowrap;
 }
 
+.text-center {
+  text-align: center;
+}
+
 /* weights */
 .regular {
   font-weight: 400;
@@ -19,6 +23,11 @@
   font-weight: 700;
 }
 
+/* colors */
+.white {
+  color: var(--white);
+}
+
 /* sizes */
 .headline {
   font-family: var(--font-days-one);
@@ -26,8 +35,8 @@
 }
 
 .headline-xxl {
-  font-size: 60px;
-  line-height: 64px;
+  font-size: clamp(2rem, 1.205rem + 3.18vw, 3.75rem);
+  line-height: clamp(2.25rem, 1.455rem + 3.18vw, 4rem);
   letter-spacing: -1%;
 }
 
@@ -92,8 +101,8 @@
 }
 
 .text-body-18 {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: clamp(0.875rem, 0.761rem + 0.45vw, 1.125rem);
+  line-height: clamp(1.125rem, 0.955rem + 0.68vw, 1.5rem);
 }
 
 .text-body-16 {

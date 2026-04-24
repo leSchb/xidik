@@ -1,9 +1,0 @@
-.hoverAnimation {
-    transition: opacity var(--transition);
-
-    @media screen and (any-hover: hover) {
-        &:hover {
-            opacity: 0.8;
-        }
-    }
-}

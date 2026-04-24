@@ -1,0 +1,15 @@
+.container {
+  gap: var(--space-7);
+
+  @media screen and (width <= 1024px) {
+    gap: var(--space-10);
+  }
+}
+
+.br {
+  display: none;
+
+  @media screen and (width <= 1024px) {
+    display: inline-block;
+  }
+}

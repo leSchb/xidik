@@ -9,6 +9,7 @@ import "./styles/sizes.css";
 import "./styles/reset.css";
 import "./styles/utilities.css";
 import "./styles/text.css";
+import "./styles/global.css";
 
 export const metadata: Metadata = layoutMetadata;
 

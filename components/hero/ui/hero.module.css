@@ -1,0 +1,26 @@
+.wrapper {
+  width: 100dvw;
+  height: 693px;
+  padding: 0 var(--space-5);
+  border-radius: 0 0 var(--space-10) var(--space-10);
+
+  background: url("/hero/hero-image.webp") no-repeat center / cover;
+
+  @media screen and (width <= 1024px) {
+    height: 940px;
+    border-radius: 0 0 var(--space-5) var(--space-5);
+    background: url("/hero/hero-media.webp") no-repeat center / cover;
+  }
+
+  @media screen and (width <= 560px) {
+    height: 707px;
+  }
+}
+
+.container {
+  gap: var(--space-60px);
+
+  @media screen and (width <= 1024px) {
+    gap: var(--space-80px);
+  }
+}
