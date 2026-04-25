@@ -27,7 +27,7 @@ export default function Nav({ className }: Props) {
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
         >
-          <span className="headline headline-xs neutral-100">{item.title}</span>
+          <span className="headline headline--xs neutral-100">{item.title}</span>
         </Link>
       ))}
       <SlidingHover ref={slidingHoverRef} bgColor="green-20" />

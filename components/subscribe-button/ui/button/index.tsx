@@ -1,7 +1,7 @@
 import classNames from "classnames";
 
-import Button from "@/shared/components/button";
 import classes from "./button.module.css";
+import Button from "@/shared/components/button";
 import { RefObject } from "react";
 
 interface Props {

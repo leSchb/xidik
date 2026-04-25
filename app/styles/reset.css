@@ -41,6 +41,7 @@ path {
 }
 
 html {
+  overflow-x: hidden;
   background-color: var(--white);
   scroll-behavior: smooth;
   &::-webkit-scrollbar {

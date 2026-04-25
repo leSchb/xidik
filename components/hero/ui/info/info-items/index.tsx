@@ -13,7 +13,7 @@ export default function HeroInfoItems() {
     >
       {items.map((item, index) => (
         <li key={index + item} className={classes.item}>
-          <span className="text-body-14 text-body bold white">{item}</span>
+          <span className="text-body--14 text-body bold white">{item}</span>
         </li>
       ))}
     </ul>

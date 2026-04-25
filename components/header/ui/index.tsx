@@ -32,7 +32,7 @@ export default function Header({ containerClassName }: Props) {
             priority
           />
         </Link>
-        <Nav />
+        <Nav className={classes.nav} />
         <HeaderButtons />
       </Container>
     </header>

@@ -1,0 +1,96 @@
+.mascote {
+  position: absolute;
+  width: 358px;
+  height: 402px;
+  background: url("/formula/mascote.png") no-repeat center / cover;
+
+  left: var(--space-9);
+  bottom: 0;
+  z-index: 1;
+  animation: levitation 5s linear infinite;
+
+  .lbStar {
+    display: none;
+
+    left: -14px;
+    bottom: 0;
+    translate: 0 50%;
+    width: 28px;
+    height: 46px;
+  }
+
+  .rStar {
+    display: none;
+
+    right: 9px;
+    bottom: 71px;
+    width: 24px;
+    height: 41px;
+  }
+
+  .ltStar {
+    display: none;
+
+    width: 16px;
+    height: 35px;
+    left: -27px;
+    top: 81px;
+  }
+
+  @media screen and (width <= 1280px) {
+    background: url("/formula/mascote-media.png") no-repeat center / cover;
+    width: 210px;
+    height: 235px;
+    left: unset;
+    right: var(--space-6);
+    bottom: -110px;
+  }
+
+  @media screen and (width <= 560px) {
+    position: relative;
+    top: unset;
+    left: unset;
+    right: unset;
+    bottom: unset;
+    background: url("/formula/mascote.png") no-repeat center / cover;
+    width: 245px;
+    height: 275px;
+    align-self: center;
+
+    .ltStar,
+    .rStar,
+    .lbStar {
+      display: block;
+    }
+  }
+}
+
+.rbStar {
+  bottom: 0;
+  right: 10%;
+  width: 82px;
+  height: 77px;
+  animation: levitation 3s linear infinite;
+
+  @media screen and (width <= 1280px) {
+    display: none;
+  }
+}
+
+@keyframes levitation {
+  0% {
+    transform: translate(0, 10%);
+  }
+  25% {
+    transform: translate(-5%, 5%);
+  }
+  50% {
+    transform: translate(5%, -5%);
+  }
+  75% {
+    transform: translate(10%, 10%);
+  }
+  100% {
+    transform: translate(0, 10%);
+  }
+}

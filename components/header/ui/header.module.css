@@ -20,3 +20,9 @@
   max-width: 1360px;
   margin: 0 auto;
 }
+
+.nav {
+  @media screen and (width <= 1280px) {
+    display: none;
+  }
+}

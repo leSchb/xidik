@@ -17,3 +17,50 @@
 .bg-white {
   background-color: var(--white);
 }
+
+.mandatory-x-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  .mandatory-x-item {
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    width: 100%;
+  }
+}
+
+/* scrollbar */
+.no-scrollbar {
+  scrollbar-width: 0;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--orange-60-primary) transparent;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--orange-60-primary);
+  border-radius: var(--space-10px);
+  transition: background-color var(--fast-transition);
+}
+
+@media (any-hover: hover) {
+  .scrollbar:hover::-webkit-scrollbar-thumb {
+    background-color: color-mix(in srgb, var(--orange-60-primary), black 20%);
+  }
+}

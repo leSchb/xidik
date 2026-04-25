@@ -37,7 +37,7 @@ export default function AnimatedContent<
   direction = "vertical",
   reverse = false,
   duration = 0.8,
-  ease = "elastic.out(1, 0.3)",
+  ease = "cubic-bezier(0,1.08,.39,.96)",
   initialOpacity = 0,
   animateOpacity = true,
   scale = 1,
@@ -50,10 +50,9 @@ export default function AnimatedContent<
   onDisappearanceComplete,
   className = "",
   asChild = false,
-  bgColor,
+  bgColor = "",
   ref,
   as,
-  needHoverAnimation = false,
   children,
   ...props
 }: Props<El, RefT>) {
@@ -84,7 +83,6 @@ export default function AnimatedContent<
       asChild={asChild}
       as={as}
       bgColor={bgColor}
-      needHoverAnimation={needHoverAnimation}
       {...(props as ContainerProps<El, RefT>)}
     >
       {children}

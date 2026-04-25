@@ -24,7 +24,7 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       className={classNames(...layoutFonts, "scrollbar")}
     >
-      <body>{children}</body>
+      <body className="body flex-column">{children}</body>
     </html>
   );
 }

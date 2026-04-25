@@ -9,7 +9,6 @@ interface ContainerOwnProps<RefT extends HTMLElement> {
   className?: string;
   asChild?: boolean;
   bgColor?: string;
-  needHoverAnimation?: boolean;
   ref?: RefObject<RefT | null>;
 }
 
